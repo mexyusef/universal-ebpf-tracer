@@ -1,0 +1,319 @@
+# Universal eBPF Tracer - Git Ignore File
+# 
+# This file specifies intentionally untracked files that Git should ignore.
+# Optimized for eBPF development, C compilation, and various development tools.
+
+# =============================================================================
+# eBPF COMPILED OBJECTS
+# =============================================================================
+
+# eBPF object files
+*.o
+*.ll
+*.s
+
+# eBPF bytecode files
+*.bpf
+*.bpf.o
+
+# LLVM intermediate files
+*.bc
+
+# =============================================================================
+# BUILD ARTIFACTS
+# =============================================================================
+
+# Build directories
+build/
+dist/
+out/
+target/
+
+# Compiled binaries
+universal-tracer
+http-tracer
+xdp-tracer
+stack-tracer
+
+# Static libraries
+*.a
+*.lib
+
+# Shared libraries
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# =============================================================================
+# DEVELOPMENT TOOLS
+# =============================================================================
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.#*
+\#*#
+
+# Vim files
+*.vim
+.netrwhist
+
+# Emacs files
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# SYSTEM FILES
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# LOGS AND TEMPORARY FILES
+# =============================================================================
+
+# Log files
+*.log
+*.log.*
+logs/
+log/
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+.cache/
+tmp/
+temp/
+
+# Core dumps
+core
+core.*
+*.core
+vgcore.*
+
+# =============================================================================
+# TESTING AND DEBUGGING
+# =============================================================================
+
+# Test outputs
+test-results/
+test-output/
+coverage/
+*.coverage
+*.gcov
+*.gcda
+*.gcno
+
+# Debugging files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Valgrind files
+*.valgrind
+vgcore.*
+
+# =============================================================================
+# DOCUMENTATION
+# =============================================================================
+
+# Generated documentation
+docs/_build/
+docs/build/
+site/
+_site/
+
+# LaTeX files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.out
+*.toc
+*.synctex.gz
+
+# =============================================================================
+# PACKAGE MANAGERS
+# =============================================================================
+
+# Go modules
+go.sum
+vendor/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Rust
+Cargo.lock
+target/
+
+# =============================================================================
+# CONTAINERS AND DEPLOYMENT
+# =============================================================================
+
+# Docker
+.dockerignore
+Dockerfile.local
+docker-compose.override.yml
+
+# Kubernetes
+*.kubeconfig
+kustomization.yaml
+
+# =============================================================================
+# SECURITY AND SECRETS
+# =============================================================================
+
+# API keys and secrets
+.env
+.env.local
+.env.*.local
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+
+# SSH keys
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.pub
+
+# =============================================================================
+# PERFORMANCE AND PROFILING
+# =============================================================================
+
+# Profiling data
+*.prof
+*.pprof
+perf.data*
+callgrind.out.*
+massif.out.*
+
+# Flame graphs
+*.svg
+flamegraph.html
+
+# =============================================================================
+# EBPF SPECIFIC
+# =============================================================================
+
+# BPF filesystem mounts
+/sys/fs/bpf/
+
+# BPF program pins
+*.pin
+
+# BTF files
+vmlinux.btf
+*.btf
+
+# BPF CO-RE files
+*.skel.h
+
+# =============================================================================
+# CONFIGURATION FILES
+# =============================================================================
+
+# Local configuration
+config.local.yaml
+config.local.json
+.config/
+local.conf
+
+# Environment-specific configs
+config.dev.yaml
+config.test.yaml
+config.staging.yaml
+
+# =============================================================================
+# BACKUP FILES
+# =============================================================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+
+# Patch files
+*.patch
+*.diff
+*.rej
+
+# =============================================================================
+# CUSTOM PATTERNS
+# =============================================================================
+
+# Add your custom ignore patterns here
+# Example:
+# my-custom-file.txt
+# custom-directory/
+*.o
+/temp-files/
